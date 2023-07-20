@@ -21,27 +21,3 @@ def sanitize_button_click():
     sanitized_text = sanitize_data(input_text)
     output_textbox.delete("1.0", tk.END)
     output_textbox.insert(tk.END, sanitized_text)
-
-# GUI Setup
-root = tk.Tk()
-root.title("Sensitive Data Sanitizer")
-
-frame = tk.Frame(root)
-frame.pack(padx=10, pady=10)
-
-input_label = tk.Label(frame, text="Input Text:")
-input_label.pack()
-
-input_textbox = scrolledtext.ScrolledText(frame, wrap=tk.WORD, width=80, height=10)
-input_textbox.pack()
-
-sanitize_button = tk.Button(frame, text="Sanitize Data", command=sanitize_button_click)
-sanitize_button.pack(pady=10)
-
-output_label = tk.Label(frame, text="Sanitized Output:")
-output_label.pack()
-
-output_textbox = scrolledtext.ScrolledText(frame, wrap=tk.WORD, width=80, height=10)
-output_textbox.pack()
-
-root.mainloop()
