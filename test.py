@@ -1,5 +1,4 @@
-import
-random
+import random
 key0 = []
 while len(key0) < 10:
     while True:
