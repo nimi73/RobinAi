@@ -14,3 +14,6 @@ while len(key1) < 10:
         if candidate in key1:
             continue
         key1.append(candidate)
+
+
+xxrraafgvgggg
