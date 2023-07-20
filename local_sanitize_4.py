@@ -8,7 +8,7 @@ model = GPT2Model.from_pretrained('gpt2-medium')
 generator = pipeline('text-generation', model=model, tokenizer=tokenizer)
 
 def sanitize_data(text):
-    prompt = f"Sanitize the following sensitive information and replace it with similar, but fake data, while keeping rest of the information exactly the same. Sensitive information which needs to be replaced, can be a company's name, a person's name, a database, server or application's name, a date, time, addresses, I.P. addresses, Port Numbers, keys, etc.:\n\n{text}\n\n---\n\nSanitized text:"
+    prompt = f"Sanitize the following sensitie information and replace it with similar, but fake data, while keeping rest of the information exactly the same. Sensitive information which needs to be replaced, can be a company's name, a person's name, a database, server or application's name, a date, time, addresses, I.P. addresses, Port Numbers, keys, etc.:\n\n{text}\n\n---\n\nSanitized text:"
 
     generated_text = generator(prompt, max_length=1024, num_return_sequences=1)
 
