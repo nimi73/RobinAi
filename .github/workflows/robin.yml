@@ -2,7 +2,9 @@ name: Robin AI Reviewer
 
 on:
   pull_request:
-    types: [ready_for_review]
+    branches: [ "main" ]
+    
+  workflow_dispatch:
 
 jobs:
   build:
