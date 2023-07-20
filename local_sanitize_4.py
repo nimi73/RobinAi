@@ -2,7 +2,6 @@ import tkinter as tk
 from tkinter import scrolledtext
 from transformers import pipeline, set_seed, GPT2Tokenizer, GPT2Model
 
-# Initialize GPT-2 medium model
 set_seed(42)
 tokenizer = GPT2Tokenizer.from_pretrained('gpt2-medium')
 model = GPT2Model.from_pretrained('gpt2-medium')
