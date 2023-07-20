@@ -13,8 +13,8 @@ jobs:
       - name: Robin AI Reviewer
         uses: Integral-Healthcare/robin-ai-reviewer@v[INSERT_LATEST_RELEASE]
         with:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          OPEN_AI_API_KEY: ${{ secrets.OPEN_AI_API_KEY }}
+          GITHUB_TOKEN: "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"
+          OPEN_AI_API_KEY: "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"
           files_to_ignore: |
             "README.md"
             "assets/*"
